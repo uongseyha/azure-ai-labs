@@ -7,7 +7,7 @@ from azure.ai.textanalytics import TextAnalyticsClient
 load_dotenv()  # Load environment variables from .env file
 
 # Create the client
-client = TextAnalyticsClient(endpoint=os.getenv("AZURE_LANGUAGE_ENDPOINT")
+client = TextAnalyticsClient(endpoint=os.getenv("AZURE_SERVICE_ENDPOINT")
                              , credential=AzureKeyCredential(os.getenv("AZURE_OPENAI_API_KEY")))
 
 # Make a request using the client for language detection
